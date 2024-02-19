@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="account_view_container" stylesheets="@../../Styles/Account.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.HelloTbank.Controllers.Client.AccountController">
+   <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản nguồn" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+   <VBox layoutX="14.0" layoutY="38.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số tài khoản:" />
+      <Label fx:id="ch_acc_num" text="0000 1111 2222" />
+      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giới hạn giao dịch:" />
+      <Label fx:id="transaction_limit" layoutX="10.0" layoutY="26.0" text="10" />
+      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày tạo:" />
+      <Label fx:id="ch_acc_date" layoutX="10.0" layoutY="61.0" text="07-07-2022" />
+      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số dư:" />
+      <Label fx:id="ch_acc_bal" layoutX="10.0" layoutY="27.0" text="3.000.000 VND" />
+   </VBox>
+   <Text layoutX="14.0" layoutY="379.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản tiết kiệm" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="364.0" />
+   <VBox layoutX="14.0" layoutY="392.0" prefHeight="300.0" prefWidth="450.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="14.0">
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Số tài khoản:" />
+      <Label fx:id="sv_acc_num" text="0000 1111 2222" />
+      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giới hạn rút tiền:" />
+      <Label fx:id="withdrawal_limit" layoutX="10.0" layoutY="26.0" text="100.000.000 VND" />
+      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ngày tạo:" />
+      <Label fx:id="sv_acc_date" layoutX="10.0" layoutY="61.0" text="07-07-2022" />
+      <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số dư:" />
+      <Label fx:id="sv_acc_bal" layoutX="10.0" layoutY="27.0" text="13.000.000 VND" />
+   </VBox>
+</AnchorPane>

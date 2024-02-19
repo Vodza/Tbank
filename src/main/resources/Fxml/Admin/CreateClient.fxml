@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="750.0" prefWidth="850.0" styleClass="create_client_container" stylesheets="@../../Styles/CreateClient.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jmc.HelloTbank.Controllers.Admin.CreateClientController">
+    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tạo tài khoản khách mới:" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+    <VBox fillWidth="false" layoutX="14.0" layoutY="36.0" prefHeight="700.0" prefWidth="600.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tên:" />
+        <TextField fx:id="fName_fld" />
+        <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ:" />
+        <TextField fx:id="lName_fld" layoutX="10.0" layoutY="27.0" />
+        <Text layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mật Khẩu:" />
+        <TextField fx:id="password_fld" layoutX="10.0" layoutY="69.0" />
+        <Text layoutX="10.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Địa chỉ người nhận tiền:" />
+        <CheckBox fx:id="pAddress_box" mnemonicParsing="false" />
+        <Label fx:id="pAddress_lbl" styleClass="payee_address_lbl" />
+        <Text layoutX="21.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tài khoản:" />
+        <CheckBox fx:id="ch_acc_box" layoutX="10.0" layoutY="150.0" mnemonicParsing="false" text="Thêm tài khoản nguồn" />
+        <Text layoutX="21.0" layoutY="406.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số dư tài khoản nguồn:" />
+        <TextField fx:id="ch_amount_fld" layoutX="10.0" layoutY="108.0" />
+        <CheckBox fx:id="sv_acc_box" layoutX="10.0" layoutY="185.0" mnemonicParsing="false" text="Thêm tài khoản tiết kiệm:" />
+        <Text layoutX="21.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số dư tài khoản tiết kiệm:" />
+        <TextField fx:id="sv_amount_fld" layoutX="10.0" layoutY="219.0" />
+        <Button fx:id="create_client_btn" mnemonicParsing="false" text="Tạo tài khoản khách mới" />
+        <Label fx:id="error_lbl" layoutX="10.0" layoutY="262.0" styleClass="error_lbl" />
+    </VBox>
+</AnchorPane>
